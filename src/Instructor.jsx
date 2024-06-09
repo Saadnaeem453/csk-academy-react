@@ -8,7 +8,7 @@ const BecomeInstructor = () => {
             <div className="row justify-content-center align-items-center">
                 <div className="col-md-5">
                     <img
-                        src="../public/IMG_20240527_214942.png"
+                        src="../src/Assests/IMG_20240527_214942.png"
                         className="img-fluid rounded-start"
                         alt="Instructor"
                     />

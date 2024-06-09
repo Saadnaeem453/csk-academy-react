@@ -1,15 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../src/Style/navbar.css"
 import { BiLogIn } from "react-icons/bi"
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 }
   from 'react-router-dom';
@@ -17,7 +13,7 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary navbarr">
       <Container>
-        <Navbar.Brand href="#"><Link to="/" style={{ textDecoration: "none", color: "black" }}>ASK Couching</Link></Navbar.Brand>
+        <Navbar.Brand href="#"><Link to="/">  <img src="../src/Assests/LOGO.png" width={50} height={50} className='img-fluid' alt="" /></Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

@@ -2,14 +2,49 @@
 
 
 .Homeheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.auto-type {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.text-container {
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+.description-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #555;
+  margin-top: 15px;
+}
+
+.image-container video {
+  border-radius: 10px;
+}
+
+@media screen and (max-width : 767px) {
+  .Homeheading {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    height: 40vh;
     font-family: 'Montserrat', sans-serif;
-
   }
-  .auto-type{
-    font-size: 2rem;
+
+  .auto-type {
+    font-size: 1.2rem;
     font-weight: bold;
   }
+}
