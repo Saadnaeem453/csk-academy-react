@@ -30,8 +30,8 @@ const Detail = ({ coursess }) => {
               </div>
               <div className="col-md-6">
                 <div className="card-body p-4">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <h3 className="card-title fw-bold">{course.name}</h3>
+                  <div className="d-flex justify-content-between align-content-center mb-3">
+                    <h4 className="card-title">{course.name}</h4>
                     <div className="price">
                       <s className="text-danger">${course.price}</s> {" "}
                       <span className="text-success">${course.price - 30}</span>

@@ -22,7 +22,7 @@ function HomePage() {
 
   useEffect(() => {
     const typed = new Typed('.auto-type', {
-      strings: ['Trading Courses', 'FreeLancing Courses', 'Amazon Courses'],
+      strings: ['Trading Course', 'FreeLance Course', 'Amazon Course'],
       typeSpeed: 80,
       backSpeed: 80,
       loop: true,
@@ -41,7 +41,7 @@ function HomePage() {
           <div className="text-container Homeheading">
             <h1>WELCOME TO ASK COUCHING</h1>
             <h3>
-              ASK Provides You{' '}
+              ASK Provides{' '}
               <span className="auto-type text-success"></span>
             </h3>
             <p>
@@ -54,7 +54,7 @@ function HomePage() {
             <video style={{ width: '90%' }} src={videos[currentVideoIndex]} muted autoPlay loop type="video/mp4"></video>
           </div>
         </Col>
-        </Row>
+      </Row>
     </Container>
   );
 }

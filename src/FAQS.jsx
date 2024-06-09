@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../src/Style/Faqs.css';
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import {
-    Link
-  } from 'react-router-dom';
+  Link
+} from 'react-router-dom';
 const FAQS = () => {
   const [activeAccordion, setActiveAccordion] = useState();
 
@@ -36,31 +36,30 @@ const FAQS = () => {
   const isAccordionActive = (index) => index === activeAccordion;
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row mt-5 mb-5">
         <div className="col-sm-4 pb-sm-0 pb-3 col-12 faqHeading">
-            <h2 className='faq text-success'>Frequently Asked 
-                Questions
-            </h2>
-            <p>Is this guide help for you?
-                 If you still have any queries
-                  about the DigiKhata app then 
-                  contact us now!</p>
+          <h2 className='faq text-success'>Frequently Asked
+            Questions
+          </h2>
+          <p>Is this guide help for you?
+            If you still have any queries
+            about the DigiKhata app then
+            contact us now!</p>
 
-                <Link to="contact"> <button  className=' faqContact '>Contact Us</button> </Link> 
+          <Link to="contact"> <button className=' faqContact '>Contact Us</button> </Link>
         </div>
         <div className="col-sm-8 col-12 mb-2 pb-2">
           {accordionData.map((item, index) => (
             <div key={index} className="accordion-item mb-2 pb-2">
               <div
-                className={`accordion-header ${
-                  isAccordionActive(index) ? 'active' : ''
-                }`}
+                className={`accordion-header ${isAccordionActive(index) ? 'active' : ''
+                  }`}
                 onClick={() => toggleAccordion(index)}
               >
                 {item.question}
                 <div className="icon-container">
-                  {isAccordionActive(index) ? <AiOutlineMinusCircle /> :<AiOutlinePlusCircle />  }
+                  {isAccordionActive(index) ? <AiOutlineMinusCircle /> : <AiOutlinePlusCircle />}
                 </div>
               </div>
               {isAccordionActive(index) && (
