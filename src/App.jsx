@@ -3,6 +3,8 @@ import Navbar from './Navbar.jsx'
 
 import Home from "./Home.jsx"
 import Courses from "./Courses.jsx"
+import About from "./About.jsx"
+
 
 import MoreCourses from "./MoreCourses.jsx"
 import Mousemove from "./Mousemove.jsx"
@@ -127,6 +129,7 @@ function App() {
           <Route path="/morecourses" element={<MoreCourses morecourses={courses} />} />
 
           <Route path="morecourses/detail/:id" element={<Detail coursess={courses} />} />
+          <Route path="/about" element={<About />} />
           <Route path="detail/:id" element={<Detail coursess={courses} />} />
           <Route
             path="/login"

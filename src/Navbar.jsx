@@ -23,7 +23,7 @@ function NavScrollExample() {
           >
             <Nav.Link><Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link></Nav.Link>
 
-            <Nav.Link><Link to="courses" style={{ textDecoration: "none", color: "black" }}>About</Link></Nav.Link>
+            <Nav.Link><Link to="/about" style={{ textDecoration: "none", color: "black" }}>About</Link></Nav.Link>
             <Nav.Link><Link to="morecourses" style={{ textDecoration: "none", color: "black" }}>Courses</Link></Nav.Link>
             <Nav.Link><Link to="contact" style={{ textDecoration: "none", color: "black" }}>Contact Us</Link></Nav.Link>
 
