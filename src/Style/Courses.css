@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+
+.cord {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transform-origin: center center;
+  max-width: 100%; /* Add this to limit card width */
+}
+
+.courses {
+  background: #edfff0;
+  overflow-x: hidden;
+  width: 100%;
+ font-family: 'Montserrat', sans-serif;
+
+}
+  .cord:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    box-shadow: 0 4px 8px rgba(4, 170, 109, 0.4); /* Add a subtle shadow with your preferred color */
+  }
+  
+  .cord .card-img-top {
+    transition: transform 0.2s;
+  }
+  
+  .cord:hover .card-img-top {
+    transform: scale(1); /* Slightly enlarge the image on hover */
+  }
+  
+  .cord .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .cord .price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  /* Add a cool hover effect for the "Details" button */
+  .cord .btn-success {
+    transition: background-color 0.2s;
+  }
+  
+  .cord .btn-success:hover {
+    background-color: #28a745; /* Change to your preferred color */
+    color: #fff;
+  }
+  
+  .arrival {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: 700;
+    color: #333; /* Change the text color to your preferred color */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative; /* Create a positioning context for pseudo-element */
+  }
+  
+  .arrival::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust the position of the line */
+    left:20px;
+    width: 10%; /* Adjust the width of the line */
+    border-bottom: 4px solid #28a745; /* Adjust the line color and style */
+  }

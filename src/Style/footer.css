@@ -1,0 +1,62 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+.footer{
+    background-color: #008051;
+ color:white;
+
+ font-family: 'Montserrat', sans-serif;
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    font-size: 1em;
+
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+.links a:hover{
+    text-decoration:underline;
+}
+.email:hover{
+    text-decoration: underline;
+}
+.no:hover{
+    text-decoration: underline;
+}
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out; /* Use transform for scaling */
+    transform-origin: center; /* Set the transform origin to the center */
+}
+
+.socialLinks a:hover {
+    transform: scale(1.2); /* Use transform to scale the link */
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (min-width: 250px) and (max-width: 576px) {
+ .other{
+    text-align: center;
+ }
+}

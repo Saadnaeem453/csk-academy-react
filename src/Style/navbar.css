@@ -1,0 +1,127 @@
+/* Add this CSS to your component's CSS file or include it in a <style> tag in your component */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+/* Navbar Container */
+.navbarr{
+  box-shadow: 0 4px 20px rgba(14, 103, 10, 0.459);
+  position: sticky;
+  top:0;
+  z-index:1024;
+}
+.navbar {
+  /* Change the background color as needed */
+    padding: 15px 0; /* Adjust the padding as needed */
+    font-family: 'Poppins', sans-serif;
+  }
+  .nav-link {
+    position: relative;
+    color: #000; /* Change the color to your desired link color */
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Adjust as needed */
+  
+    /* Add a line that starts hidden and expands on hover */
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px; /* Adjust the line thickness as needed */
+      background-color: 
+      #04aa6d; /* Change the color to your desired line color */
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0); /* Initially, the line is not visible */
+      transform-origin: right;
+      transition: transform 0.3s;
+    }
+  
+    &:hover::before {
+      transform: scaleX(1); /* On hover, expand the line to cover the text */
+      transform-origin: left;
+    }
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+  }
+  
+  /* Disabled Link */
+  .nav-link[aria-disabled="true"] {
+    color: #ccc; /* Change the color for disabled links */
+  }
+  
+  /* Button */
+  .btn-1 {
+    position: relative;
+    padding: 7px 15px;
+   
+    background-color: #f8f8f8;
+    border:0.5px solid #04aa6d;
+    color: #04aa6d;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1; /* Ensure the button text is above the ::before pseudo-element */
+  }
+  
+  .btn-1::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, 
+    #04aa6d 50%, #e01616 50%);
+    border:none !important;
+    background-size: 200% 100%;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .btn-1:hover::before {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+    left: 0;
+    z-index: -1; /* Ensure the ::before pseudo-element is below the button content */
+  }
+  
+  .btn-1:hover {
+    color: #fff;
+    border:0.5px solid #04aa6d !important;
+    /* Change the text color on hover */
+    background: none; /* Remove the background color on hover */
+  }
+  /* Login Icon */
+.loginicon{
+  padding-right: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 992px) {
+    .navbar {
+      padding: 10px 0;
+    }
+  
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .nav-link {
+      margin-right: 0;
+      margin-bottom: 10px; 
+    }
+  
+    .btn-1 {
+      margin-left: 0;
+      margin-top: 10px; 
+    }
+  }
+  

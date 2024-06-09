@@ -1,0 +1,59 @@
+
+  /* YourAccordionStyle.css */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+.accordion-header {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width:100%;
+cursor: pointer;
+
+  }
+  
+  
+  .accordion-header.active {
+    background-color: #04aa6d;
+    color:#ffffff;
+    font-weight: bold;
+  }
+  
+  .accordion-body {
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+.icon-container {
+    float: right;
+    margin-left: 10px; 
+    opacity: 0.6;
+    font-size: 1.3rem;
+  }
+  .faq{
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+
+  }
+  .faqContact{
+    outline: none;
+    border: 0px;
+    padding: 8px;
+    background-color: #04aa6d;
+    color:white;
+
+
+  }
+  .faqContact:hover{
+    background-color: #ffffff;
+    border:1px solid #04aa6d;
+    color: #04aa6d;
+    padding: 7px;
+
+
+  }
+  .faqHeading{
+    font-family: 'Montserrat', sans-serif;
+
+  }
